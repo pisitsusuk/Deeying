@@ -38,7 +38,7 @@ async function startChat(event) {
   chatHistory.appendChild(userChat);
 
   try {
- const response = await fetch("http://localhost:10000/chat", {
+ const response = await fetch("https://deeying-1.onrender.com/public/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: userMessage }),
