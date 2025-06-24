@@ -38,11 +38,12 @@ async function startChat(event) {
   chatHistory.appendChild(userChat);
 
   try {
-     const response = await fetch("https://deeying-1.onrender.com", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: userMessage }),
-    });
+     const response = await fetch("https://deeying-1.onrender.com/chat", {
+   method: "POST",
+   headers: { "Content-Type": "application/json" },
+   body: JSON.stringify({ message: userMessage }),
+});
+
 
 
     if (!response.ok) {
