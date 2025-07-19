@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deeying Admin</title>
+    <link rel="shortcut icon" href="../public/img/logo.png" type="DeeYing">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="admin.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="boxlogo">
+          <img src="../public/img/logo.png" alt="">
+        </div>
+  
+        <div class="menulist">
+            <a href="home.html" id="list1">หน้าหลัก</a>
+            <a href="store.html" id="list2">สินค้า</a>
+            <a href="" id="list3">เครื่องชั่งดิจิตอล</a>
+            <a href="" id="list4">ใบเสนอราคา</a>
+            <a href="" id="list5">ติดต่อเรา</a>
+        </div>
+  
+        <div class="boxaccount">
+            <input type="text" placeholder="Search...">
+            <a href="" id="account-img">
+                <img src="../public/img/account_img.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- Navbar end -->   
+    
+    <div class="admin-container">
+        <nav class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#" onclick="showPage('dashboard')">Dashboard</a></li>
+                <li><a href="#" onclick="showPage('manage')">Manage</a></li>
+                <li><a href="#" onclick="showPage('category')">Category</a></li>
+                <li><a href="#" onclick="showPage('product')">Product</a></li>
+                <li><a href="#" onclick="showPage('orders')">Orders</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <section id="dashboard" class="page active">
+                <h2>Dashboard</h2>
+                <p>Welcome to the Admin Panel Dashboard.</p>
+            </section>
+            
+            <section id="manage" class="page">
+                <h2>User Management</h2>
+                <table>
+                    <tr>
+                        <th>Name</th><th>Address</th><th>Role</th><th>Status</th><th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>Somchai@gmail.com</td><td>Test Address</td>
+                        <td>
+                            <select>
+                                <option>User</option>
+                                <option>Admin</option>
+                            </select>
+                        </td>
+                        <td><span class="status active">Active</span></td>
+                        <td><button class="disable-btn">Disable</button></td>
+                    </tr>
+                </table>
+
+                <table>    
+                    <tr>
+                        <td>Boo1234@gmail.com</td><td>Test Address</td>
+                        <td>
+                            <select>
+                                <option>Admin</option>
+                                <option>Admin</option>
+                            </select>
+                        </td>
+                        <td><span class="status active">Active</span></td>
+                        <td><button class="disable-btn">Disable</button></td>
+                    </tr>
+                </table>
+
+                <table>
+                    
+                    <tr>
+                        <td>Inmza04@gmail.com</td><td>Test Address</td>
+                        <td>
+                            <select>
+                                <option>User</option>
+                                <option>Admin</option>
+                            </select>
+                        </td>
+                        <td><span class="status active">Active</span></td>
+                        <td><button class="disable-btn">Disable</button></td>
+                    </tr>
+                </table>
+
+                <table>    
+                    <tr>
+                        <td>EdwinTV@gmail.com</td><td>Test Address</td>
+                        <td>
+                            <select>
+                                <option>Admin</option>
+                                <option>Admin</option>
+                            </select>
+                        </td>
+                        <td><span class="status active">Active</span></td>
+                        <td><button class="disable-btn">Disable</button></td>
+                    </tr>
+                </table>
+
+                <table>
+                    
+                    <tr>
+                        <td>WedJak1@gmail.com</td><td>Test Address</td>
+                        <td>
+                            <select>
+                                <option>User</option>
+                                <option>Admin</option>
+                            </select>
+                        </td>
+                        <td><span class="status active">Active</span></td>
+                        <td><button class="disable-btn">Disable</button></td>
+                    </tr>
+                </table>
+
+                <table>    
+                    <tr>
+                        <td>MaxJAK1@gmail.com</td><td>Test Address</td>
+                        <td>
+                            <select>
+                                <option>Admin</option>
+                                <option>Admin</option>
+                            </select>
+                        </td>
+                        <td><span class="status active">Active</span></td>
+                        <td><button class="disable-btn">Disable</button></td>
+                    </tr>
+                </table>
+
+                <table>
+                    
+                    <tr>
+                        <td>TheiSka1@gmail.com</td><td>Test Address</td>
+                        <td>
+                            <select>
+                                <option>User</option>
+                                <option>Admin</option>
+                            </select>
+                        </td>
+                        <td><span class="status active">Active</span></td>
+                        <td><button class="disable-btn">Disable</button></td>
+                    </tr>
+                </table>
+
+            </section>
+            
+            <section id="category" class="page">
+                <h2>Category Management</h2>
+                <input type="text" placeholder="Category Name">
+                <button>Add Category</button>
+                <ul class="">
+                    <li class="category-item">ตราชั่งเล็ก<div><button class="edit">Edit</button> <button class="delete">Delete</button></div></li>
+                    <li class="category-item">ตราชั่งใหญ่<div><button class="edit">Edit</button> <button class="delete">Delete</button></div></li>
+                    <li class="category-item">ตราชั่งระเอียด<div><button class="edit">Edit</button> <button class="delete">Delete</button></div></li>
+                    <li class="category-item">ตราชั่งรถบรรทุก<div><button class="edit">Edit</button> <button class="delete">Delete</button></div></li>
+                    
+                </ul>
+            </section>
+            
+            <section id="product" class="page">
+                <h2>Product Management</h2>
+                <input type="text" placeholder="Product Title">
+                <input type="text" placeholder="Description">
+                <input type="number" placeholder="Price">
+                <button>Add Product</button>
+                <table>
+                    <tr>
+                        <th>Image</th><th>Title</th><th>Description</th><th>Price</th><th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td><img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1543199277.0a158b267ea8560e1bce9d225eb7d498.jpg" width="50"></td>
+                        <td>Axle scales</td>
+                        <td>Truck Scales</td>
+                        <td>$159000</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528764027.8fcf1518418437dbdf92b9057a9ff985.png" width="50"></td>
+                        <td>SVW-150KG</td>
+                        <td>350 X 450 MM.</td>
+                        <td>฿7,500</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1542073212.991fa0e36d75da162b6d2a473250b0fa.jpg" width="50"></td>
+                        <td>Truck scale</td>
+                        <td>เครื่องชั่งรถบรรทุก</td>
+                        <td>฿180,000</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1665427233.427136da4eaaafbb44bafff3f33dcdc1.jpg" width="50"></td>
+                        <td>AZANO GCF-SERIES</td>
+                        <td></td>
+                        <td>฿80,000</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528751272.3a4e99f885e4d9165651fef2b20124d8.png" width="50"></td>
+                        <td>AZANO : RWS-3024-6KG</td>
+                        <td>240 X 300 MM.</td>
+                        <td>฿12,000</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528759289.541b6083171452482e0b51cae7379ff6.png" width="50"></td>
+                        <td>AZANO : JC-6KG</td>
+                        <td>240 X 370 MM.</td>
+                        <td>฿10,000</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528760068.7d92afb2946a0db6b7520ebe303108df.png" width="50"></td>
+                        <td>AZANO : JP-6KG</td>
+                        <td>240 X 370 MM.</td>
+                        <td>฿11,000</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528760544.d522f08e810e1267d400953c48070a02.png" width="50"></td>
+                        <td>AZANO : JWP-6KG</td>
+                        <td>240 X 370 MM.</td>
+                        <td>฿12,000</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1542588922.7b6eab20830fd0e58bf5348ec774b3e7.jpg" width="50"></td>
+                        <td>CALIBRATION Truck Scales</td>
+                        <td>Truck Scales</td>
+                        <td>฿200,000</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="product.jpg" width="50"></td>
+                        <td>Sample Product</td>
+                        <td>Description</td>
+                        <td>$100</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="product.jpg" width="50"></td>
+                        <td>Sample Product</td>
+                        <td>Description</td>
+                        <td>$100</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="product.jpg" width="50"></td>
+                        <td>Sample Product</td>
+                        <td>Description</td>
+                        <td>$100</td>
+                        <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+                    </tr>
+                </table>
+            </section>
+            
+            <section id="orders" class="page">
+                <h2>Order Management</h2>
+                <table>
+                    <tr>
+                        <th>Customer</th><th>Items</th><th>Total</th><th>Status</th><th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>MaxJAK1@gmail.com</td>
+                        <td>Axle scales , SVW-150KG , Truck scale</td>
+                        <td>฿346,500</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td><button class="cancel">Cancel</button></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

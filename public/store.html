@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeeYing</title>
+    <link rel="stylesheet" href="store.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="DeeYing">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.css">
+</head>
+<body class="body">
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="boxlogo">
+          <img src="/img/logo.png" alt="">
+        </div>
+
+        <div class="menulist">
+            <a href="home.html" id="list1">หน้าหลัก</a>
+            <a href="store.html" id="list2">สินค้า</a>
+            <a href="" id="list3">เครื่องชั่งดิจิตอล</a>
+            <a href="" id="list4">ใบเสนอราคา</a>
+            <a href="" id="list5">ติดต่อเรา</a>
+        </div>
+
+        <div class="boxaccount">
+            <input type="text" placeholder="Search...">
+            <a href="login.html" id="account-img">
+                <img src="/img/account_img.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- Navbar end -->
+
+    <div class="boxstore1">
+        <div class="insiteboxstore1">
+            <div class="content1-insiteboxstore1">
+                <span>ค้นหาสินค้า</span>
+                <div class="search-storeitem">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="content1-insiteboxstore2">
+                <span>หมวดหมู่สินค้า</span>
+                <div class="checkbox">
+                    <div class="checkbox1">
+                        <input type="checkbox">ตราชั่งเล็ก
+                    </div>
+                    <div class="checkbox2">
+                        <input type="checkbox">ตราชั่งใหญ่
+                    </div>
+                    <div class="checkbox3">
+                        <input type="checkbox">ตราชั่งดิจิตอล
+                    </div>
+                    <div class="checkbox3">
+                        <input type="checkbox">ตราชั่งละเอียด
+                    </div>
+                    <div class="checkbox4">
+                        <input type="checkbox">ตราชั่งรถบรรทุก
+                    </div>
+                </div>
+            </div>
+            <div class="content1-insiteboxstore3">
+                <span>ราคา</span>
+                <div class="max-min">
+                    <div class="max-minbox">
+                        <div class="min">ต่ำสุด: <span id="min-price"></span></div>
+                        <div class="max">สูงสุด: <span id="max-price"></span></div>
+                    </div>
+                    
+                </div>
+                <div id="slider"></div> <!-- Slider ที่จะใช้ noUiSlider -->
+            </div>
+        </div>
+
+        
+<!-- instiebox2 -->
+<div class="insiteboxstore2">
+    <h3 class="store-title">สินค้าทั้งหมด</h3>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1543199277.0a158b267ea8560e1bce9d225eb7d498.jpg" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">Axle scales</span>
+                <span class="product-desc">Truck Scales</span>
+                <span class="product-price">฿159,000</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528764027.8fcf1518418437dbdf92b9057a9ff985.png" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">SVW-150KG</span>
+                <span class="product-desc">350 X 450 MM.</span>
+                <span class="product-price">฿7,500</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1542073212.991fa0e36d75da162b6d2a473250b0fa.jpg" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">Truck scale</span>
+                <span class="product-desc">เครื่องชั่งรถบรรทุก</span>
+                <span class="product-price">฿180,000</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1665427233.427136da4eaaafbb44bafff3f33dcdc1.jpg" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">AZANO GCF-SERIES</span>
+                <span class="product-desc"> </span>
+                <span class="product-price">฿80,000</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528751272.3a4e99f885e4d9165651fef2b20124d8.png" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">AZANO : RWS-3024-6KG</span>
+                <span class="product-desc">240 X 300 MM.</span>
+                <span class="product-price">฿12,000</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528759289.541b6083171452482e0b51cae7379ff6.png" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">AZANO : JC-6KG</span>
+                <span class="product-desc">240 X 370 MM.</span>
+                <span class="product-price">฿10,000</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528760068.7d92afb2946a0db6b7520ebe303108df.png" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">AZANO : JP-6KG</span>
+                <span class="product-desc">240 X 370 MM.</span>
+                <span class="product-price">฿11,000</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528760544.d522f08e810e1267d400953c48070a02.png" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">AZANO : JWP-6KG</span>
+                <span class="product-desc">240 X 370 MM.</span>
+                <span class="product-price">฿12,000</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1542588922.7b6eab20830fd0e58bf5348ec774b3e7.jpg" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">CALIBRATION Truck Scales</span>
+                <span class="product-desc">Truck Scales</span>
+                <span class="product-price">฿200,000</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1659727591.66e43035aa0a98cb4f533a6b0891ca10.jpg" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">PPQ-690U</span>
+                <span class="product-desc">22 mm. LED Display</span>
+                <span class="product-price">฿20,000</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1665430375.3f521d00364b9ee0abd2cc11d354295b.png" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">FISH WPP-SERIES</span>
+                <span class="product-desc">30X40 ซม. และ 40X50 ซม.</span>
+                <span class="product-price">฿24,000</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1699832526.624d9c279cf91cced3202e82e8aa096d.jpg" alt="สินค้า">
+            <div class="product-info">
+                <span class="product-name">AZANO - LS2</span>
+                <span class="product-desc">15kg - 30kg 5g/10g</span>
+                <span class="product-price">฿12,500</span>
+                <button class="add-to-cart-btn">🛒</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- instiebox2 -->
+
+
+        <div class="insiteboxstore3">
+            <h3 class="cart-title">ตะกร้าสินค้า</h3>
+        
+            <div class="cart-item">
+                <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1543199277.0a158b267ea8560e1bce9d225eb7d498.jpg" >
+                <div class="cart-item-details">
+                    <span class="item-name">Axle scales</span>
+                    <span class="item-price">฿159,000</span>
+                    <div class="quantity-control">
+                        <button class="qty-btn">−</button>
+                        <span class="qty">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+                <span class="item-total-price">฿159,000</span>
+                <button class="remove-btn">🗑️</button>
+            </div>
+        
+            <div class="cart-item">
+                <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1528764027.8fcf1518418437dbdf92b9057a9ff985.png">
+                <div class="cart-item-details">
+                    <span class="item-name">SVW-150KG</span>
+                    <span class="item-price">฿7,500</span>
+                    <div class="quantity-control">
+                        <button class="qty-btn">−</button>
+                        <span class="qty">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+                <span class="item-total-price">฿7,500</span>
+                <button class="remove-btn">🗑️</button>
+            </div>
+        
+            <div class="cart-item">
+                <img src="https://7space.sgp1.digitaloceanspaces.com/9I00/1542073212.991fa0e36d75da162b6d2a473250b0fa.jpg">
+                <div class="cart-item-details">
+                    <span class="item-name">Truck scale</span>
+                    <span class="item-price">฿180,000</span>
+                    <div class="quantity-control">
+                        <button class="qty-btn">−</button>
+                        <span class="qty">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+                <span class="item-total-price">฿180,000</span>
+                <button class="remove-btn">🗑️</button>
+            </div>
+        
+            <div class="cart-summary">
+                <span class="summary-label">รวม:</span>
+                <span class="summary-price">฿346,500</span>
+            </div>
+        
+            <a href="listitem.html" class="checkout-link">
+                <button class="checkout-btn">ดำเนินการชำระเงิน</button>
+            </a>
+            
+        </div>
+        
+
+    </div>
+
+    <!-- เพิ่ม noUiSlider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.js"></script>
+    <script src="store.js"></script> <!-- เชื่อมต่อไฟล์ JavaScript -->
+</body>
+</html>

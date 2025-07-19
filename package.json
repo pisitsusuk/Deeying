@@ -1,0 +1,35 @@
+{
+  "name": "deeying-main",
+  "version": "1.0.0",
+  "description": "",
+ 
+  "scripts": {
+    "push": "prisma generate && prisma db push",
+    "start": "node server/server.js",
+    "dev": "nodemon -- server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/dialogflow": "^6.12.0",
+    "@prisma/client": "^6.4.1",
+    "@react-oauth/google": "^0.12.2",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "dialogflow": "^4.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "google-auth-library": "^9.15.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql": "^2.18.1",
+    "openai": "^4.76.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.4.2",
+    "prisma": "^6.4.1"
+  },
+  "keywords": []
+}
