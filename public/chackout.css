@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+.navbar{
+    display: flex;
+    padding: 0%;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar{
+    /* background-color:rgb(229, 229, 231);   */
+    background-color:rgb(33, 53, 85);
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;   /* ทำให้ navbar อยู่กลางในแนวนอน */
+    /*position: fixed;   ทำให้ navbar อยู่ที่ตำแหน่งที่กำหนด */
+    top: 0;  /* ให้ navbar อยู่ตรงขอบบนสุด */
+    left: 0;  /* กำหนดตำแหน่งทางซ้าย */
+    right: 0;  /* กำหนดตำแหน่งทางขวา */
+    z-index: 100;
+}
+
+.boxlogo{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;
+}
+.boxlogo img{
+    object-fit:cover;
+    height: 100%;
+    width: 50px;
+}   
+.menulist{
+    /* background-color:cadetblue; */
+    height: 60%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.menulist a:hover {
+    background-color:rgb(62, 88, 121);
+    color: rgb(255, 255, 255) !important;
+    transition: all 0.2s ease;
+  }
+#list1,#list2,#list3,#list4,#list5,#list6,#list7{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 164%;
+    width: 120px;
+    /* color: rgb(0, 0, 0); */
+    color: aliceblue;
+    font-size: 14px;
+}
+
+.sigin a{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    position: relative;
+    right: 20px;
+    text-decoration: none;
+}
+.sigin a:hover{
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(33, 53, 85);
+    font-size: 16px !important;
+    transition: all 0.6s ease;
+}
+
+   
+.bigbox{
+    display:flex;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+    gap: 100px;
+}
+.box1 {
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: "Prompt", sans-serif;
+}
+
+.box1 h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(71, 176, 88);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: rgb(53, 134, 67);
+}
+
+.box2 {
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: "Prompt", sans-serif;
+}
+
+.box2 h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-price {
+    color: red;
+    font-weight: bold;
+    text-align: right;
+}
+
+.item-quantity {
+    font-size: 14px;
+    color: gray;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.summary {
+    margin-bottom: 15px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.total-price {
+    color: red;
+    font-size: 18px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    /* margin-top: 50px; */
+}
+
+.checkout-btn:hover {
+    background-color: darkred;
+}

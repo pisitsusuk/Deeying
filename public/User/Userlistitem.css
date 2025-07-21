@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+
+
+/* Navbar */
+.navbar {
+    /* display: flex; */
+    padding: 0%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(33, 53, 85);
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    position: relative;
+}
+
+.boxlogo {
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;
+}
+
+.boxlogo img {
+    object-fit: cover;
+    height: 100%;
+    width: 50px;
+}
+
+.menulist {
+    height: 60%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    bottom: 32.9px;
+    left: 200px;
+}
+
+.menulist a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 164%;
+    width: 120px;
+    color: aliceblue;
+    font-size: 14px;
+}
+
+.menulist a:hover {
+    background-color: rgb(62, 88, 121);
+    color: rgb(255, 255, 255) !important;
+    transition: all 0.2s ease;
+}
+
+.boxaccount {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.boxaccount input[type="text"] {
+    height: 25px;
+    width: 130px;
+    padding: 6px;
+    border: none;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.boxaccount input:focus,
+.boxaccount input:active {
+    outline: none;
+}
+
+#account-img img {
+    height: 30px;
+    position: relative;
+}
+
+/* รายการสินค้า */
+.insiteboxlist_item1 {
+    height: 270px;
+    width: 70%;
+    background-color: rgb(244, 244, 244);
+    position: relative;
+    left: 15%;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listcard {
+    height: 90%;
+    width: 62.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.textlist {
+    height: 15%;
+    width: 97%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Card สินค้า */
+.card1, .card2, .card3 {
+    height: 25%;
+    width: 97%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card1 img, .card2 img, .card3 img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 12px;
+    color: gray;
+}
+
+.total-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+/* สรุปยอดรวม */
+.totalprice {
+    height: 90%;
+    width: 35%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: relative;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headtext {
+    height: 15%;
+    width: 90%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.des-price {
+    height: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+#price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ปุ่มสั่งซื้อ */
+.button-to-pay {
+    width: 90%;
+    height: 50px;
+}
+
+#button-payment {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 70%;
+    background-color: rgb(205, 50, 50);
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#button-payment:hover {
+    background-color: rgb(180, 40, 40);
+}
+
+/* ปุ่มแก้ไขรายการ */
+.edit-list {
+    width: 90%;
+    height: 50px;
+}
+
+#edit-list {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 70%;
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#edit-list:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(33, 53, 85);
+  color: white;
+  position: absolute;
+}
+.dropbtn img{
+    height: 30px;
+    width: 30px;
+}
+
+.dropdown {
+  display: inline-block;
+    position: absolute;
+    right: 115px;
+    bottom: 37px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 110px;
+  top: 40px;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding:8px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+
+/* ปรับความสูงของ navbar และทำให้มันติดอยู่ด้านบน */
+.navbar {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(33, 53, 85);
+    width: 100%;
+    height: 40px;
+    position: fixed; /* ทำให้ navbar ติดอยู่ด้านบน */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.boxlogo {
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;
+}
+
+.boxlogo img {
+    object-fit: cover;
+    height: 100%;
+    width: 50px;
+}
+
+.menulist {
+    height: 60%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.menulist a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 164%;
+    width: 120px;
+    color: aliceblue;
+    font-size: 14px;
+}
+
+.menulist a:hover {
+    background-color: rgb(62, 88, 121);
+    color: rgb(255, 255, 255) !important;
+    transition: all 0.2s ease;
+}
+
+.boxaccount {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.boxaccount input[type="text"] {
+    height: 25px;
+    width: 130px;
+    padding: 6px;
+    border: none;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.boxaccount input:focus,
+.boxaccount input:active {
+    outline: none;
+}
+
+#account-img img {
+    height: 30px;
+    position: relative;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px; /* ความสูงของ navbar */
+}
+
+.admin-container {
+    display: flex;
+    width: 100%;
+    margin-top: 40px; /* ความสูงของ navbar */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: rgb(33, 53, 85);
+    color: white;
+    padding: 20px;
+    min-height: calc(100vh - 40px); /* ปรับความสูงให้พอดีกับหน้าจอ */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(232, 232, 232);
+    min-height: calc(100vh - 40px); /* ปรับความสูงให้พอดีกับหน้าจอ */
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.status {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.active { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); }
+.pending { background-color: orange; color: white; }
+
+.disable-btn, .cancel {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit, .delete {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit { background-color: orange; color: white; }
+.delete { background-color: red; color: white; }
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeeYing</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="DeeYing">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chackout.css">
+</head>
+
+
+
+<body>
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="boxlogo">
+              <img src="/img/logo.png" alt="">
+            </div>
+    
+            <div class="menulist">
+                <a href="home.html" id="list1">หน้าหลัก</a>
+                <a href="store.html" id="list2">สินค้า</a>
+                <a href="" id="list3">เครื่องชั่งดิจิตอล</a>
+                <a href="" id="list4">ใบเสนอราคา</a>
+                <a href="" id="list5">ติดต่อเรา</a>
+            </div>
+    
+           <div class="sigin"><a href="/public/login.html">สมัครชิก/เข้าสู่ระบบ</a></div>
+        </div>
+    <!-- Navbar end -->
+
+    <div class="bigbox">
+        <div class="box1">
+            <h3>ที่อยู่สำหรับจัดส่ง</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">ชื่อ-นามสกุล</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="กรอกชื่อ-นามสกุล" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์</label>
+                    <input type="tel" id="phone" name="phone" placeholder="กรอกเบอร์โทรศัพท์" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">ที่อยู่</label>
+                    <textarea id="address" name="address" rows="3" placeholder="กรอกที่อยู่" required></textarea>
+                </div>
+        
+                <div class="form-group">
+                    <label for="zipcode">รหัสไปรษณีย์</label>
+                    <input type="text" id="zipcode" name="zipcode" placeholder="กรอกรหัสไปรษณีย์" required>
+                </div>
+        
+                <button type="submit" class="submit-btn">บันทึกที่อยู่</button>
+            </form>
+        </div>
+        
+        
+        <div class="box2">
+            <h3>คำสั่งซื้อของคุณ</h3>
+        
+            <div class="item">
+                <span class="item-name">Axle scales</span>
+                <span class="item-price">฿159,000</span>
+                <div class="item-quantity">จำนวน: 1 x 159,000</div>
+            </div>
+        
+            <div class="item">
+                <span class="item-name">SVW-150KG</span>
+                <span class="item-price">฿7,500</span>
+                <div class="item-quantity">จำนวน: 1 x 7,500</div>
+            </div>
+        
+            <div class="item">
+                <span class="item-name">Truck scale</span>
+                <span class="item-price">฿180,000</span>
+                <div class="item-quantity">จำนวน: 1 x 180,000</div>
+            </div>
+        
+            <hr>
+        
+            <div class="summary">
+                <div class="summary-row">
+                    <span>ค่าจัดส่ง:</span>
+                    <span>฿0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>ค่าลดส่วนลด:</span>
+                    <span>฿0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span><strong>ยอดรวมสุทธิ:</strong></span>
+                    <span class="total-price">฿346,500</span>
+                </div>
+            </div>
+        
+            <button class="checkout-btn">ขอใบเสนอราคา</button>
+        </div>
+        
+    </div>    
+
+
+
+
+
+
+</body>
+</html>
