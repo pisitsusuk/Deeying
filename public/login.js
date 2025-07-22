@@ -50,7 +50,7 @@ signInBtn.addEventListener("click", async function (e) {
             alert("✅ เข้าสู่ระบบสำเร็จ");
             localStorage.setItem("token", data.token);
             localStorage.setItem("user", JSON.stringify(data.user));
-            window.location.href = "Userhome.html";
+            window.location.href = "/User/Userhome.html";
         } else {
             alert("❌ " + data.message);
         }
