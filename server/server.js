@@ -16,6 +16,7 @@ app.use(cors()); // อนุญาตให้เชื่อมจาก front
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(express.static('public'));
+app.use('/User', express.static(path.join(__dirname, 'public/User')));
 
 // ✅ เชื่อม Route สำหรับ Auth
 const authRoutes = require('../routes/auth');
@@ -25,6 +26,8 @@ app.use('/api', authRoutes); // เช่น POST /api/login
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/login.html"));
 });
+
+
 
 // ✅ เชื่อม Dialogflow
 if (!process.env.DIALOGFLOW_PROJECT_ID) {
